@@ -1,0 +1,89 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.controls {
+  display: flex;
+  flex-flow: column nowrap
+}
+.btn {
+  font-size: 2em;
+  width: 200px;
+  height: 60px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  transition: all .2s ease;
+  &:not(:last-child) {
+    margin: 0 0 25px 0;
+  }
+  &:hover {
+    border-width: 4px;
+  }
+}
+.info {
+  display: flex;
+  flex-flow: column nowrap;
+  
+  margin: 10px 0 10px 0;
+  span {
+    font-size: 1.2em;
+    color: grey;
+  }
+}
+.stop-start-btn {
+  border: 2px solid hsl(130, 100%, 40%);
+  color: hsl(130, 100%, 40%)
+}
+.reset-btn {
+  border: 2px solid hsl(200, 100%, 50%);
+  color: hsl(200, 100%, 50%);
+}
+.lap-btn {
+  border: 2px solid hsl(360, 100%, 50%);
+  color: hsl(360, 100%, 50%);
+}
+.clear-all-btn {
+  border: 2px solid hsl(0, 100%, 10%);
+  color: hsl(0, 100%, 10%);
+}
+.time-cont {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.time {
+  font-size: 3em;
+  color: grey;
+  user-select: none;
+}
+.elapsed-time {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background: hsl(257, 100%, 80%);
+  border: 1px solid hsl(210, 100%, 50%);
+  border-radius: 5px;
+  width: 165px;
+  height: 65px;
+  color: white;
+  font-size: 1.4em;
+  &:not(:last-child) {
+    margin: 0 0 10px 0;
+  }
+}
+.fa-times {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  font-size: .7em;
+  color: white;
+  cursor: pointer;
+}
